@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="google-container">
+    <!-- Логотип Google -->
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="google-logo">
+
+    <!-- Поисковая строка -->
+    <div class="search-container">
+      <input type="text" id="search-input" class="search-input" readonly>
+      <div class="loading-indicator" id="loading-indicator"></div>
+    </div>
+
+    <!-- Кнопки -->
+    <div class="buttons">
+      <button>Поиск в Google</button>
+      <button>Мне повезёт</button>
+    </div>
+
+    <!-- Галерея фотографий -->
+    <div class="gallery" id="gallery">
+      <!-- Фотографии будут добавлены с помощью JavaScript -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <a href="#">Для бизнеса</a>
+      <a href="#">Как работает Google Поиск</a>
+    </div>
+  </div>
+
+  <!-- Модальное окно для увеличенного просмотра фотографий -->
+  <div id="modal" class="modal">
+    <span id="close-modal" class="close-modal">&times;</span>
+    <img id="modal-image" class="modal-content">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
